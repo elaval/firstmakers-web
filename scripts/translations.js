@@ -1,0 +1,5 @@
+angular.module('firstMakersApp').run(['gettextCatalog', function (gettextCatalog) {
+/* jshint -W100 */
+    gettextCatalog.setStrings('es', {"FirstMakers - open source software that allos you to controll your FirstMakers board in a few minutes. Visual programmable blocks to capture sensor values and modifiy actuators.  If you have you used Scratch or Snap you will be ready to go in a few seconds!":"First Makers - software abierto que permite controlar tu placa FirstMakers in pocos minutos. Bloques de programación visual permiten capturar los valores de sensores y modificar los actuadores.  Si has usado Scratch o Snap podrás arrancar en pocos segundos.","FirstMakers - shield for Aduino prebuilt with sensors, actuators and easily exnadable with modules that can be connected with a simple 3.5mm (earphone) connector.":"First Makers - placa para Arduino preparada con sensores, actuadores y fácilmente expandible con módulos que se conectan con un simple conector de 3.5mm (el que se usa en los audífonos de música).","Making it simple for young makers!":"¡Soluciones simples para jóvenes creadores!"});
+/* jshint +W100 */
+}]);

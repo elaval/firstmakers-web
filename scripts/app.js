@@ -5,7 +5,9 @@ angular
     'ngCookies',
     'ngResource',
     'ngSanitize',
-    'ngRoute'
+    'ngRoute',
+    'gettext',
+    'ui.bootstrap'
   ])
   .config(function ($routeProvider) {
     $routeProvider
@@ -16,4 +18,7 @@ angular
       .otherwise({
         redirectTo: '/'
       });
-  });
+  })
+  angular.module('firstMakersApp').run(function (gettextCatalog) {
+    gettextCatalog.setCurrentLanguage('es');
+  });;
