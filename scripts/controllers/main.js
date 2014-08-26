@@ -19,4 +19,6 @@ angular.module('firstMakersApp')
     	this.selectedLanguage = lang;
     	gettextCatalog.setCurrentLanguage(lang);
     }
+
+    this.selectLanguage('en');
   });

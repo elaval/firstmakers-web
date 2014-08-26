@@ -1,46 +1,56 @@
-<div class="header" ng-controller="MainCtrl as controller">
+<div ng-controller="MainCtrl as controller">
+<div class="header">
 
     <!-- Split button -->
     <div class="btn-group nav nav-pills pull-right" dropdown>
-      <button type="button" class="btn btn-info">{{controller.languageLabels[controller.selectedLanguage]}}</button>
-      <button type="button" class="btn btn-info dropdown-toggle">
+      <button type="button" class="btn btn-primary">{{controller.languageLabels[controller.selectedLanguage]}}</button>
+      <button type="button" class="btn btn-primary dropdown-toggle">
         <span class="caret"></span>
         <span class="sr-only">Split button!</span>
       </button>
       <ul class="dropdown-menu" role="menu">
-        <li><a ng-click="controller.selectLanguage('es')">Español</a></li>
-        <li><a ng-click="controller.selectLanguage('en')">English</a></li>
+        <li><a dropdown-toggle ng-click="controller.selectLanguage('es')">Español</a></li>
+        <li><a dropdown-toggle ng-click="controller.selectLanguage('en')">English</a></li>
       </ul>
     </div>
 
   <h3 class="text-muted">First Makers</h3>
 </div>
 
-<div class="jumbotron">
-  <h1>First Makers</h1>
-  <p class="lead">
-    <img src="images/firstmakersBoard.png" alt="Fisrt Makers" class='img-responsive'><br>
-    <span translate>Making it simple for young makers!</span>
-  </p>
+<div class="page-header">
+  <h1 translate>Making it simple for young makers!</h1>
 </div>
 
 <div class="row marketing">
   <h4>Hardware</h4>
   <p translate>
     First Makers Board - shield for Aduino prebuilt with sensors and actuators.  It is easily expandable with external modules (more sensors and actuators) that can be connected with common 3.5mm connector (like the ones used for connecting earphones).
-
+  </p>
+  <p translate>
     No need to solder, nor having especialised knowledge of electronics. Just need your curiosity and creativity to start connecting and controlling objects around you. 
+  </p>
+  <img src="images/firstmakersBoard.png" alt="Fisrt Makers" class='img-responsive'><br>
+  <p class="label label-info" translate>
+    The boards are currently being tested (prototype stage) and soon will be available to the public. 
   </p>
 
   <h4>Software</h4>
   <p translate>
-    First Makers Software - open source software that allows you to control your First Makers board in a few minutes. Visual programmable blocks let you capture sensor values and modifiy actuators.  
-
+    First Makers Software - open source software that allows you to control your First Makers board in a few minutes. Visual programmable blocks let you capture sensor values and modifiy actuators.</p> 
+  <p translate>
     Very easy to give your first steps programming objects around you (and connect them to the Internet)! 
   </p>
+  <img src="images/swBlock-{{controller.selectedLanguage}}.png" alt="Software example" class='img-responsive'><br>
+  <a type="button" class="btn btn-default" href="http://s3.amazonaws.com/firstmakers/releases/0.0.2/win/Snap4ArduinoWin.zip" target="_self"><span translate>Download</span> (Windows)</a>  
+  <a type="button" class="btn btn-default" href="http://s3.amazonaws.com/firstmakers/releases/0.0.2/mac/Snap4ArduinoMac.zip" target="_self"><span translate>Download</span> (Mac)</a>  
+
+
+
 
 </div>
 
 <div class="footer">
   <p><span class="glyphicon glyphicon-heart"></span> First Makers</p>
+</div>
+
 </div>

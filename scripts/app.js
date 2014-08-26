@@ -19,6 +19,3 @@ angular
         redirectTo: '/'
       });
   })
-  angular.module('firstMakersApp').run(function (gettextCatalog) {
-    gettextCatalog.setCurrentLanguage('es');
-  });;
