@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('firstMakersApp')
-  .controller('MainCtrl', function ($scope,gettextCatalog) {
+  .controller('HeaderController', function ($scope,$location,gettextCatalog) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
@@ -21,4 +21,8 @@ angular.module('firstMakersApp')
     }
 
     this.selectLanguage('es');
+
+    $scope.isActive = function (viewLocation) { 
+        return viewLocation === $location.path();
+    };
   });

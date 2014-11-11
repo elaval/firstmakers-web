@@ -12,9 +12,23 @@ angular
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'views/main.html',
+        templateUrl: 'views/seccion1.html',
         controller: 'MainCtrl'
       })
+      .when('/home', {
+        templateUrl: 'views/seccion1.html',
+        controller: 'MainCtrl'
+      })
+      .when('/gettingstarted', {
+        templateUrl: 'views/seccion2.html',
+        controller: 'MainCtrl'
+      })
+     .when('/examples', {
+        templateUrl: 'views/seccion3.html',
+        controller: 'MainCtrl'
+      })
+
+
       .otherwise({
         redirectTo: '/'
       });

@@ -1,0 +1,29 @@
+<div class="container" ng-controller="HeaderController as controller">
+
+    <ul class="nav nav-tabs pull-right" role="tablist">
+      <li role="presentation" ng-class="{ active: isActive('/home') }">
+        <a href="#home" translate>Portada</a>
+      </li>
+      <li role="presentation" ng-class="{ active: isActive('/gettingstarted') }">
+        <a href="#gettingstarted" translate>Iniciándose</a>
+      </li>
+      <li role="presentation" ng-class="{ active: isActive('/examples') }">
+        <a href="#examples" translate>Ejemplos</a>
+      </li>
+      <li>
+        <div class="btn-group nav nav-pills pull-right" dropdown>
+          <button type="button" class="btn btn-primary">{{controller.languageLabels[controller.selectedLanguage]}}</button>
+          <button type="button" class="btn btn-primary dropdown-toggle">
+            <span class="caret"></span>
+            <span class="sr-only">Split button!</span>
+          </button>
+          <ul class="dropdown-menu" role="menu">
+            <li><a dropdown-toggle ng-click="controller.selectLanguage('es')">Español</a></li>
+            <li><a dropdown-toggle ng-click="controller.selectLanguage('en')">English</a></li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+
+    <h3 class="text-muted">First Makers</h3>
+</div>
