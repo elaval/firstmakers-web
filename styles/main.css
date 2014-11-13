@@ -2,6 +2,7 @@
 body {
   padding-top: 20px;
   padding-bottom: 20px;
+
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -61,7 +62,7 @@ body {
 }
 
 /* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 360px) {
   /* Remove the padding we set earlier */
   .header,
   .marketing,
@@ -77,4 +78,80 @@ body {
   .jumbotron {
     border-bottom: 0;
   }
+
+  .hardware{
+      padding-top: 5%;
+      background-image:url("../images/hardwareBg.png");
+      background-size: cover;
+      padding-bottom: 5%;
+
+  }
+  .software{
+      margin: 0;
+      background-image:url("../images/swBg.png");
+      background-size: cover;
+      padding-bottom: 5%;
+  }
+  .header-section{
+      margin-bottom: 5%;
+  }
+  .hardware-enter {
+        -webkit-transition: 1s linear all;
+        transition: 1s linear all;
+        opacity: 0;
+    }
+
+  .hardware-enter.hardware-enter-active {
+        opacity: 1;
+  }
+  .text{
+      color: #dfdfdf;
+      text-shadow: 2px 2px #232323;
+  }
+  .text-p{
+      font-size: 18px;
+
+  }
+    .text-justify {
+        text-align: justify;
+    }
+
+  .section-separator{
+      padding-top: 2em;
+      padding-bottom: 2em;
+      background-color: #1c1c1c;
+      border-top: 1px solid #dddddd;
+      border-bottom: 1px solid #dddddd;
+
+  }
+    .section-margin{
+        padding-top: 2em;
+    }
+  .footer{
+      background-color: #1c1c1c;
+      padding-bottom: 2em;
+
+  }
+
+}
+.btn-social-icon.btn-lg {
+    height: 50px;
+    width: 50px;
+    padding-left: 0;
+    padding-right: 0;
+}
+.btn-facebook {
+    color: #fff;
+    background-color: #3b5998;
+    border-color: rgba(0,0,0,0.2);
+}
+.btn-twitter {
+    color: #fff;
+    background-color: #55acee;
+    border-color: rgba(0,0,0,0.2);
+}
+.btn-google-plus {
+    color: #fff;
+    background-color: #dd4b39;
+    border-color: rgba(0,0,0,0.2);
 }

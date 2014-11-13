@@ -8,6 +8,8 @@ angular
     'ngRoute',
     'gettext',
     'ui.bootstrap'
+
+
   ])
   .config(function ($routeProvider) {
     $routeProvider

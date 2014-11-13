@@ -1,12 +1,7 @@
 'use strict';
 
 angular.module('firstMakersApp')
-  .controller('MainCtrl', function ($scope,gettextCatalog) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('MainCtrl', function ($scope, gettextCatalog) {
 
     this.languageLabels = {
     	'es' : 'Español',
@@ -20,5 +15,5 @@ angular.module('firstMakersApp')
     	gettextCatalog.setCurrentLanguage(lang);
     }
 
-    this.selectLanguage('es');
+    //this.selectLanguage('es');
   });

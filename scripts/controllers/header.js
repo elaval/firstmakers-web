@@ -1,12 +1,8 @@
 'use strict';
 
 angular.module('firstMakersApp')
-  .controller('HeaderController', function ($scope,$location,gettextCatalog) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('HeaderController', function ($scope, $location, gettextCatalog) {
+
 
     this.languageLabels = {
     	'es' : 'Español',
